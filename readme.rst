@@ -1,5 +1,7 @@
 MicroPython I2C driver for the Focus LCDs FT6336U capacitive touch panel controller IC.
 
+.. image:: docs/FT6336u.jpg
+
 Basic usage
 ===============
 
