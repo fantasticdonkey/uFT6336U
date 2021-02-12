@@ -28,7 +28,7 @@ The FT6336U driver can then be instantiated using the :code:`I2C` object. For th
 .. image:: docs/get_positions.png
 
 Use with interrupt
-===============
+====================
 
 For best results, use the driver with the designated interrupt pin. This way, discreet code can be triggered based on newly registered points.
 
@@ -47,4 +47,10 @@ For best results, use the driver with the designated interrupt pin. This way, di
 
     pir.irq(trigger=Pin.IRQ_RISING, handler=handle_interrupt)
 
-.. image:: docs/get_positions_irq.png
+.. image:: docs/get_positions_irq.
+
+Further reading
+===================
+
+* `FT6336U datasheet <https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/datasheet/core/Ft6336GU_Firmware%20%E5%A4%96%E9%83%A8%E5%AF%84%E5%AD%98%E5%99%A8_20151112-%20EN.xlsx>`_
+
