@@ -30,10 +30,10 @@ __version__ = "0.1.0"
 # pylint: disable=import-error
 from micropython import const
 
-# Default I2C address of the FT6336U. Driver not tested with any other types.
+# Default I2C address of the FT6336U. Driver not tested with any other models.
 I2C_ADDRESS = const(0x38)
 
-# FT6336U I2C registers. Most are not used by this driver and are included for future use.
+# FT6336U I2C registers. Most are not used by this driver but are included for future use.
 # If required, they can be directly addressed using the driver's low level functions.
 # Refer to the FT6336U datasheet for details on how to interact with these registers.
 REG_MODE_SWITCH = const(0x00)
