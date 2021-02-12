@@ -20,7 +20,10 @@ The FT6336U driver can then be instantiated using the :code:`I2C` object. For th
 
     import uFT6336U
     touch = uFT6336U.FT6336U(i2c_bus)
+
     touch.get_positions()
+
+.. image:: docs/get_positions.png
 
 Use with interrupt
 ===============
@@ -41,3 +44,5 @@ For best results, use the driver with the designated interrupt pin. This way, di
     pir = Pin(INTERRUPT_PIN, Pin.IN)
 
     pir.irq(trigger=Pin.IRQ_RISING, handler=handle_interrupt)
+
+.. image:: docs/get_positions_irq.png
