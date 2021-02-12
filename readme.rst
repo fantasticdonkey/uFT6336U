@@ -29,7 +29,7 @@ For best results, use the driver with the designated interrupt pin. This way, di
 
 .. code-block:: python
 
-    INTERRUPT_PIN = 39
+    INTERRUPT_PIN = const(39)
 
     def handle_interrupt(pin):
         num_points = touch.get_points()
