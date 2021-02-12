@@ -18,7 +18,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-# https://github.com/fantasticdonkey/
+# https://github.com/fantasticdonkey/uFT6336U
 
 """
 MicroPython I2C driver for the Focus LCDs FT6336U capacitive touch panel controller IC.
