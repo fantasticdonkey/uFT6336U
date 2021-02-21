@@ -85,6 +85,7 @@ CHIP_CODE_FT6336U = const(0x02)
 class FT6336U():
     """ Focus LCDs' FT6336U driver and its interfaces """
     read_buffer = bytearray(2)
+    write_buffer = bytearray(1)
 
     def __init__(self, i2c, rst=None):
         """ Requires valid MicroPython I2C object """
@@ -106,9 +107,10 @@ class FT6336U():
             return int.from_bytes(self.read_buffer, "large")
         raise ValueError("Unsupported buffer size")
 
-    def _writeto_mem(self, register, data):
+    def _writeto_mem(self, register, *data):
         """ Low level method to write I2C register. """
-        self.i2c.writeto_mem(I2C_ADDRESS, register, bytes(data))
+        self.write_buffer[0] = data[0]
+        self.i2c.writeto_mem(I2C_ADDRESS, register, self.write_buffer)
 
     def set_mode_working(self):
         """ Set chip to working mode. """
