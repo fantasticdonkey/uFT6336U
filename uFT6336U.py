@@ -25,7 +25,7 @@ MicroPython I2C driver for the Focus LCDs FT6336U capacitive touch panel control
 Combine with the configuration of an interrupt pin on the host for best user experience.
 """
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 # pylint: disable=import-error
 from micropython import const
