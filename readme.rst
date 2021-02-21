@@ -47,7 +47,7 @@ For best results, use the driver with the designated interrupt pin. This way, di
 
     pir.irq(trigger=Pin.IRQ_RISING, handler=handle_interrupt)
 
-.. image:: docs/get_positions_irq.
+.. image:: docs/get_positions_irq.png
 
 Further reading
 ===================
